@@ -5,7 +5,7 @@ abstract class VirtualKeyboardLayoutKeys {
   int activeIndex = 0;
 
   List<List> get defaultEnglishLayout => _defaultEnglishLayout;
-  List<List> get defaultArabicLayout => _defaultArabicLayout;
+  List<List> get defaultArabicLayout => _defaultRussianLayout;
 
   List<List> get activeLayout => getLanguage(activeIndex);
   int getLanguagesCount();
@@ -27,10 +27,10 @@ class VirtualKeyboardDefaultLayoutKeys extends VirtualKeyboardLayoutKeys {
 
   List<List> getLanguage(int index) {
     switch (defaultLayouts[index]) {
-      case VirtualKeyboardDefaultLayouts.English:
+      case VirtualKeyboardDefaultLayouts.english:
         return _defaultEnglishLayout;
-      case VirtualKeyboardDefaultLayouts.Arabic:
-        return _defaultArabicLayout;
+      case VirtualKeyboardDefaultLayouts.russian:
+        return _defaultRussianLayout;
       default:
     }
     return _defaultEnglishLayout;
@@ -106,7 +106,7 @@ const List<List> _defaultEnglishLayout = [
   ]
 ];
 
-const List<List> _defaultArabicLayout = [
+const List<List> _defaultRussianLayout = [
   // Row 1
   const [
     '1',
@@ -122,48 +122,49 @@ const List<List> _defaultArabicLayout = [
   ],
   // Row 2
   const [
-    'ض',
-    'ص',
-    'ث',
-    'ق',
-    'ف',
-    'غ',
-    'ع',
-    'ه',
-    'خ',
-    'ح',
-    'ج',
-    'د',
+    'й',
+    'ц',
+    'у',
+    'к',
+    'е',
+    'н',
+    'г',
+    'ш',
+    'щ',
+    'з',
+    'х',
+    'ъ',
     VirtualKeyboardKeyAction.Backspace
   ],
   // Row 3
   const [
-    'ش',
-    'س',
-    'ي',
-    'ب',
-    'ل',
-    'ا',
-    'ت',
-    'ن',
-    'م',
-    'ك',
-    'ط',
+    'ф',
+    'ы',
+    'в',
+    'а',
+    'п',
+    'р',
+    'о',
+    'л',
+    'д',
+    'ж',
+    'э',
+    '\'',
     VirtualKeyboardKeyAction.Return
   ],
   // Row 4
   const [
-    'ذ',
-    'ئ',
-    'ء',
-    'ؤ',
-    'ر',
-    'لا',
-    'ى',
-    'ة',
-    'و',
-    'ز',
-    'ظ',
+    VirtualKeyboardKeyAction.Shift,
+    'я',
+    'ч',
+    'с',
+    'м',
+    'и',
+    'т',
+    'ь',
+    'б',
+    'ю',
+    '.',
     VirtualKeyboardKeyAction.Shift
   ],
   // Row 5
@@ -172,7 +173,7 @@ const List<List> _defaultArabicLayout = [
     '@',
     VirtualKeyboardKeyAction.Space,
     '-',
-    '.',
     '_',
+    ';',
   ]
 ];

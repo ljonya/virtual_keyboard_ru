@@ -151,7 +151,7 @@ class _VirtualKeyboardState extends State<VirtualKeyboard> {
     type = widget.type;
     customLayoutKeys = widget.customLayoutKeys ??
         VirtualKeyboardDefaultLayoutKeys(
-            widget.defaultLayouts ?? [VirtualKeyboardDefaultLayouts.English]);
+            widget.defaultLayouts ?? [VirtualKeyboardDefaultLayouts.english]);
     builder = widget.builder;
     onKeyPress = widget.onKeyPress;
     height = widget.height;
