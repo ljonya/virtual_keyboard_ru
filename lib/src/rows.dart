@@ -1,4 +1,4 @@
-part of virtual_keyboard_multi_language;
+part of virtual_keyboard_ru;
 
 /// Keys for Virtual Keyboard's rows.
 const List<List> _keyRowsNumeric = [

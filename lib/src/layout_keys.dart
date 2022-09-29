@@ -1,5 +1,4 @@
-part of virtual_keyboard_multi_language;
-//import '../virtual_keyboard_multi_language.dart';
+part of virtual_keyboard_ru;
 
 abstract class VirtualKeyboardLayoutKeys {
   int activeIndex = 0;

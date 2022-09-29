@@ -1,3 +1,3 @@
-part of virtual_keyboard_multi_language;
+part of virtual_keyboard_ru;
 
 enum VirtualKeyboardDefaultLayouts { english, russian }

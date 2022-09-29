@@ -1,4 +1,4 @@
-part of virtual_keyboard_multi_language;
+part of virtual_keyboard_ru;
 
 /// The default keyboard height. Can we overriden by passing
 ///  `height` argument to `VirtualKeyboard` widget.
